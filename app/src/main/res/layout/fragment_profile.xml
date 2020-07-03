@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGround">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+
+
+            android:id="@+id/meditProfileFragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+
+                    android:id="@+id/bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bar_home"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:layout_marginTop="0.5dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:padding="5dp"
+                            android:text="Edit Profile"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_alignParentLeft="true"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:orientation="horizontal">
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    tools:context=".Fragments.EditProfileFragment">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/user_photo"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+
+                            android:layout_margin="10dp"
+                            android:src="@drawable/logo2"
+                            app:civ_border_color="#00000000"
+                            app:civ_border_width="2dp" />
+
+                        <LinearLayout
+                            android:id="@+id/NameAndMail"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/user_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/app_name"
+                                android:textColor="#555555"
+                                android:textSize="22dp"
+
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/UserMail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_margin="10dp"
+                                android:text="Network Error"
+                                android:textColor="#555555"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <Button
+                                android:id="@+id/meditprofilebtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="2"
+                                android:background="@drawable/wallet_shape"
+                                android:text="Edit Profile"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:layout_gravity="bottom"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/minvitefriendsRelative"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/mnotification_icon"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/invitefriends_icon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="12dp"
+                                android:layout_toRightOf="@+id/mnotification_icon"
+                                android:text="Invite Friends"
+                                android:textSize="12dp" />
+
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/mcustomerSupportRelative"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/mprivasy_icon"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/customer_support_icon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="12dp"
+                                android:layout_toRightOf="@+id/mprivasy_icon"
+                                android:text="Customer Support"
+                                android:textSize="12dp" />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/mmakesuggestionRelative"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/mlegalinfo_icon"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/suggestions_icon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="12dp"
+                                android:layout_toRightOf="@+id/mlegalinfo_icon"
+                                android:text="Make a Suggestion"
+                                android:textSize="12dp" />
+
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/mLogOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/wallet_shape"
+                    android:text="Log Out"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

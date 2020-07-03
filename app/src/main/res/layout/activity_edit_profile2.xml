@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.EditProfile2Activity">
+
+
+    <LinearLayout
+        android:id="@+id/meditProfileActivityContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Edit Your Profile"
+                android:textColor="@color/textColor"
+                android:textSize="30dp" />
+
+            <ImageView
+                android:id="@+id/mgobackIconEP"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/left_arrow_icon" />
+
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/user_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:src="@drawable/logo2"
+            app:civ_border_color="#00000000"
+            app:civ_border_width="2dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="368dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/logout"
+                        android:layout_width="325dp"
+                        android:layout_height="59dp">
+
+                        <ImageView
+                            android:id="@+id/mperonIcon"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/person_icon" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/AppTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/mperonIcon"
+                            android:background="#fff"
+                            app:boxStrokeColor="#fff"
+
+                            tools:ignore="MissingConstraints">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/mNameEP"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="User Name"
+                                android:textColor="@color/colorPrimary"
+                                android:textColorHint="@color/colorPrimaryDark"
+                                android:textSize="15dp"
+
+
+                                />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="325dp"
+                        android:layout_height="59dp">
+
+                        <ImageView
+                            android:id="@+id/mlockIcon"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/mmail_icon" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/mlockIcon"
+                            android:background="#fff"
+                            app:boxStrokeColor="#fff"
+                            tools:ignore="MissingConstraints">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/mEmailEP"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="E_Mail"
+                                android:textColor="@color/colorPrimary"
+                                android:textColorHint="@color/colorPrimaryDark"
+                                android:textSize="15dp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mContinueRelative"
+    android:background="@drawable/singup_shap"
+    android:text="continue"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:textSize="18sp"
+    android:layout_margin="10dp"
+    />
+    </LinearLayout>
+
+</LinearLayout>
